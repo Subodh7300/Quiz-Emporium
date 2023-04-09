@@ -1,0 +1,36 @@
+{% extends 'learner/base.html' %}
+{% load static %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+
+<section class="banner inner-page" xmlns="http://www.w3.org/1999/html">
+            <div class="banner-img"><img src="{% static 'images/banner/quiz.jpg' %}" alt=""></div>
+            <div class="page-title">
+                <div class="container">
+                    <h1>Quiz</h1>
+                </div>
+            </div>
+        </section>
+        <section class="breadcrumb white-bg">
+            <div class="container">
+                <ul>
+                    <li><a href="/learner">Home</a></li>
+                    <li><a href="/learner/quiz-list">Quiz</a></li>
+                </ul>
+            </div>
+        </section>
+
+<section class="quiz-view">
+            <div class="container">
+                <div class="quiz-title">
+                    <h2>ERROR</h2>
+                </div>
+                <div class="row">
+                        <p>{{ error }}</p>
+                </div>
+            </div>
+        </section>
+
+{% endblock %}
